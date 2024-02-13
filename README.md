@@ -1,0 +1,1 @@
+Este proyecto tiene como finalidad el consumo y creacion de un aplicativo para realidad auemntada el cual servira para extraer la informacion mas relevante contenida en una muestra de laboratorio clinico
