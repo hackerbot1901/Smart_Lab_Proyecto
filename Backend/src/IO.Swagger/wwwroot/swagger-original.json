@@ -1,0 +1,430 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Smart Lab RA API",
+    "description" : "Documento OAS para la API Smart Lab RA",
+    "version" : "1"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/GIANCARLONARANJOEPN/smart-lab-ra-api/1",
+    "description" : "SwaggerHub API Auto Mocking"
+  }, {
+    "url" : "https://api.smart-lab-ra/v1"
+  } ],
+  "tags" : [ {
+    "name" : "configuracion",
+    "description" : "Este endpoint permite la creación de un objeto de configuración para subdominio y token"
+  }, {
+    "name" : "informacionPaciente",
+    "description" : "Este endpoint permite la obtención de información adicional del paciente mediante código de barras CODE128"
+  } ],
+  "paths" : {
+    "/configuracion" : {
+      "post" : {
+        "tags" : [ "configuracion" ],
+        "summary" : "Inserta un nuevo subdominio y token para la creación de un objeto de configuración",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CodigoQr"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Objeto creado para la configuración de la Aplicación",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ExitoCreacionConfiguracion"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Solicitud Incorrecta",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error400"
+                }
+              }
+            }
+          },
+          "401" : {
+            "description" : "No autorizado",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error401"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error interno del servidor",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error500"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/informacionPaciente/{codigoBarras}" : {
+      "get" : {
+        "tags" : [ "informacionPaciente" ],
+        "summary" : "Obtiene la información del paciente en base al código de barras proporcionado",
+        "parameters" : [ {
+          "name" : "token",
+          "in" : "header",
+          "description" : "Token de autenticación",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "name" : "codigoBarras",
+          "in" : "path",
+          "description" : "Código de barras del paciente",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se encontró la muestra correspondiente al código de barras",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/InformacionAdicionalPaciente"
+                }
+              }
+            }
+          },
+          "401" : {
+            "description" : "No autorizado",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error401"
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Recurso no encontrado",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error404"
+                }
+              }
+            }
+          },
+          "500" : {
+            "description" : "Error interno del servidor",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/Error500"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "CodigoQr" : {
+        "type" : "object",
+        "properties" : {
+          "nombre_laboratorista" : {
+            "type" : "string",
+            "description" : "Nombre del laboratorista"
+          },
+          "sucursal" : {
+            "type" : "string",
+            "description" : "Sucursal del laboratorio"
+          },
+          "subdominio" : {
+            "type" : "string",
+            "description" : "Subdominio al cual tiene que apuntar la API"
+          },
+          "token" : {
+            "type" : "string",
+            "description" : "Token para la autorización del laboratorista"
+          }
+        }
+      },
+      "ExitoCreacionConfiguracion" : {
+        "type" : "object",
+        "properties" : {
+          "mensaje" : {
+            "type" : "string",
+            "description" : "Objeto creado para la configuración de subdominio y token de la aplicación"
+          },
+          "subdominio" : {
+            "type" : "string",
+            "description" : "Subdominio"
+          },
+          "token" : {
+            "type" : "string",
+            "description" : "Token de autenticación"
+          }
+        },
+        "example" : {
+          "mensaje" : "mensaje",
+          "subdominio" : "subdominio",
+          "token" : "token"
+        }
+      },
+      "InformacionAdicionalPaciente" : {
+        "type" : "object",
+        "properties" : {
+          "resultado" : {
+            "$ref" : "#/components/schemas/InformacionAdicionalPaciente_resultado"
+          },
+          "message" : {
+            "type" : "string",
+            "description" : "Mensaje informativo de éxito"
+          }
+        },
+        "example" : {
+          "resultado" : {
+            "numero_Orden" : 6,
+            "nombres_Apellidos" : "nombres_Apellidos",
+            "sucursal" : "sucursal",
+            "sexo" : "sexo",
+            "codigoBarras" : "codigoBarras",
+            "urgencia" : "urgencia",
+            "edad" : 0,
+            "examenes" : [ {
+              "fecha_validacion" : "fecha_validacion",
+              "codigo" : "codigo",
+              "fecha_reporte" : "fecha_reporte",
+              "estado" : "estado",
+              "usuario_validacion" : "usuario_validacion",
+              "fecha_toma_muestra" : "fecha_toma_muestra",
+              "valor" : 5,
+              "id" : 1,
+              "id_externo" : 5,
+              "fecha_creacion" : "fecha_creacion",
+              "nombre" : "nombre"
+            }, {
+              "fecha_validacion" : "fecha_validacion",
+              "codigo" : "codigo",
+              "fecha_reporte" : "fecha_reporte",
+              "estado" : "estado",
+              "usuario_validacion" : "usuario_validacion",
+              "fecha_toma_muestra" : "fecha_toma_muestra",
+              "valor" : 5,
+              "id" : 1,
+              "id_externo" : 5,
+              "fecha_creacion" : "fecha_creacion",
+              "nombre" : "nombre"
+            } ]
+          },
+          "message" : "message"
+        }
+      },
+      "Error400" : {
+        "type" : "object",
+        "properties" : {
+          "mensaje" : {
+            "type" : "string",
+            "description" : "Descripción del error 400"
+          }
+        }
+      },
+      "Error401" : {
+        "type" : "object",
+        "properties" : {
+          "mensaje" : {
+            "type" : "string",
+            "description" : "Descripción del error 401"
+          }
+        }
+      },
+      "Error404" : {
+        "type" : "object",
+        "properties" : {
+          "mensaje" : {
+            "type" : "string",
+            "description" : "Descripción del error 404"
+          }
+        }
+      },
+      "Error500" : {
+        "type" : "object",
+        "properties" : {
+          "mensaje" : {
+            "type" : "string",
+            "description" : "Descripción del error 500"
+          }
+        }
+      },
+      "InformacionAdicionalPaciente_resultado_examenes" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "integer"
+          },
+          "id_externo" : {
+            "type" : "integer"
+          },
+          "codigo" : {
+            "type" : "string"
+          },
+          "nombre" : {
+            "type" : "string"
+          },
+          "fecha_creacion" : {
+            "type" : "string"
+          },
+          "fecha_toma_muestra" : {
+            "type" : "string"
+          },
+          "fecha_reporte" : {
+            "type" : "string"
+          },
+          "fecha_validacion" : {
+            "type" : "string"
+          },
+          "usuario_validacion" : {
+            "type" : "string"
+          },
+          "estado" : {
+            "type" : "string"
+          },
+          "valor" : {
+            "type" : "integer"
+          }
+        },
+        "example" : {
+          "fecha_validacion" : "fecha_validacion",
+          "codigo" : "codigo",
+          "fecha_reporte" : "fecha_reporte",
+          "estado" : "estado",
+          "usuario_validacion" : "usuario_validacion",
+          "fecha_toma_muestra" : "fecha_toma_muestra",
+          "valor" : 5,
+          "id" : 1,
+          "id_externo" : 5,
+          "fecha_creacion" : "fecha_creacion",
+          "nombre" : "nombre"
+        }
+      },
+      "InformacionAdicionalPaciente_resultado" : {
+        "type" : "object",
+        "properties" : {
+          "sucursal" : {
+            "type" : "string",
+            "description" : "Sucursal del paciente"
+          },
+          "codigoBarras" : {
+            "type" : "string",
+            "description" : "Código de barras del paciente"
+          },
+          "nombres_Apellidos" : {
+            "type" : "string",
+            "description" : "Nombres y apellidos del paciente"
+          },
+          "sexo" : {
+            "type" : "string",
+            "description" : "Sexo del paciente"
+          },
+          "urgencia" : {
+            "type" : "string",
+            "description" : "Nivel de urgencia del paciente"
+          },
+          "edad" : {
+            "type" : "integer",
+            "description" : "Edad del paciente"
+          },
+          "numero_Orden" : {
+            "type" : "integer",
+            "description" : "Número de orden del paciente"
+          },
+          "examenes" : {
+            "type" : "array",
+            "items" : {
+              "$ref" : "#/components/schemas/InformacionAdicionalPaciente_resultado_examenes"
+            }
+          }
+        },
+        "example" : {
+          "numero_Orden" : 6,
+          "nombres_Apellidos" : "nombres_Apellidos",
+          "sucursal" : "sucursal",
+          "sexo" : "sexo",
+          "codigoBarras" : "codigoBarras",
+          "urgencia" : "urgencia",
+          "edad" : 0,
+          "examenes" : [ {
+            "fecha_validacion" : "fecha_validacion",
+            "codigo" : "codigo",
+            "fecha_reporte" : "fecha_reporte",
+            "estado" : "estado",
+            "usuario_validacion" : "usuario_validacion",
+            "fecha_toma_muestra" : "fecha_toma_muestra",
+            "valor" : 5,
+            "id" : 1,
+            "id_externo" : 5,
+            "fecha_creacion" : "fecha_creacion",
+            "nombre" : "nombre"
+          }, {
+            "fecha_validacion" : "fecha_validacion",
+            "codigo" : "codigo",
+            "fecha_reporte" : "fecha_reporte",
+            "estado" : "estado",
+            "usuario_validacion" : "usuario_validacion",
+            "fecha_toma_muestra" : "fecha_toma_muestra",
+            "valor" : 5,
+            "id" : 1,
+            "id_externo" : 5,
+            "fecha_creacion" : "fecha_creacion",
+            "nombre" : "nombre"
+          } ]
+        }
+      }
+    },
+    "parameters" : {
+      "token" : {
+        "name" : "token",
+        "in" : "header",
+        "description" : "Token de autenticación",
+        "required" : true,
+        "style" : "simple",
+        "explode" : false,
+        "schema" : {
+          "type" : "string"
+        }
+      },
+      "codigoBarras" : {
+        "name" : "codigoBarras",
+        "in" : "path",
+        "description" : "Código de barras del paciente",
+        "required" : true,
+        "style" : "simple",
+        "explode" : false,
+        "schema" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
