@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "e4c97a21-2879-4aca-9d54-584447cb48ff",
+		"name": "API Smart Lab RA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29392960"
+	},
+	"item": [
+		{
+			"name": "configuracion qr",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Prueba de solicitud válida\r",
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body should have valid configuration data\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('mensaje', 'Objeto creado para la configuración de subdominio y token de la aplicación');\r",
+							"    pm.expect(jsonData).to.have.property('subdominio');\r",
+							"    pm.expect(jsonData).to.have.property('api_token');\r",
+							"    pm.expect(jsonData.subdominio).to.be.a('string');\r",
+							"    pm.expect(jsonData.api_token).to.be.a('string');\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombreLaboratorista\": \"string\",\r\n  \"sucursal\": \"string\",\r\n  \"subdominio\": \"string\",\r\n  \"api_token\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/GIANCARLONARANJOEPN/smart-lab-ra-api/1/configuracion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"GIANCARLONARANJOEPN",
+						"smart-lab-ra-api",
+						"1",
+						"configuracion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "informacion adicional paciente",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Prueba de código de estado 200\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Prueba de cuerpo de respuesta\r",
+							"pm.test(\"Response body should contain valid patient information\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('sucursal');\r",
+							"    pm.expect(jsonData).to.have.property('codigoBarras');\r",
+							"    pm.expect(jsonData).to.have.property('nombres_Apellidos');\r",
+							"    pm.expect(jsonData).to.have.property('sexo');\r",
+							"    pm.expect(jsonData).to.have.property('urgencia');\r",
+							"    pm.expect(jsonData).to.have.property('edad');\r",
+							"    pm.expect(jsonData).to.have.property('numero_Orden');\r",
+							"    pm.expect(jsonData).to.have.property('examenes');\r",
+							"    \r",
+							"    // Verificar la estructura de los exámenes\r",
+							"    var examenes = jsonData.examenes;\r",
+							"    pm.expect(examenes).to.be.an('array');\r",
+							"    pm.expect(examenes.length).to.be.above(0);\r",
+							"    pm.expect(examenes[0]).to.have.property('id');\r",
+							"    pm.expect(examenes[0]).to.have.property('id_externo');\r",
+							"    pm.expect(examenes[0]).to.have.property('codigo');\r",
+							"    pm.expect(examenes[0]).to.have.property('nombre');\r",
+							"    pm.expect(examenes[0]).to.have.property('fecha_creacion');\r",
+							"    pm.expect(examenes[0]).to.have.property('fecha_toma_muestra');\r",
+							"    pm.expect(examenes[0]).to.have.property('fecha_reporte');\r",
+							"    pm.expect(examenes[0]).to.have.property('fecha_validacion');\r",
+							"    pm.expect(examenes[0]).to.have.property('usuario_validacion');\r",
+							"    pm.expect(examenes[0]).to.have.property('estado');\r",
+							"    pm.expect(examenes[0]).to.have.property('valor');\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api_token",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/GIANCARLONARANJOEPN/smart-lab-ra-api/1/informacionPaciente/231031201-1.1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"GIANCARLONARANJOEPN",
+						"smart-lab-ra-api",
+						"1",
+						"informacionPaciente",
+						"231031201-1.1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "muestra no encontrada",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Prueba de código de estado 404\r",
+							"pm.test(\"Status code is 404 when no sample found\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"// Prueba de cuerpo de respuesta para código de estado 404\r",
+							"pm.test(\"Response body should contain error message when no sample found\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('mensaje', 'No se encontró ninguna muestra para el código de barras proporcionado.');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api_token",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/GIANCARLONARANJOEPN/smart-lab-ra-api/1/informacionPaciente/{codigoBarras}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"GIANCARLONARANJOEPN",
+						"smart-lab-ra-api",
+						"1",
+						"informacionPaciente",
+						"{codigoBarras}"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "123",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "configuracion inapropiada",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Invalid QR code validation\", function () {\r",
+							"    // Supongamos que la respuesta tiene un código de estado 400 para una solicitud inválida\r",
+							"    pm.response.to.have.status(400);\r",
+							"    \r",
+							"    // Verificar si el cuerpo de la respuesta tiene el mensaje de error esperado\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('mensaje', 'Código QR no válido.');\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombreLaboratorista\": \"string\",\r\n  \"sucursal\": \"string\",\r\n  \"api_token\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/GIANCARLONARANJOEPN/smart-lab-ra-api/1/configuracion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"GIANCARLONARANJOEPN",
+						"smart-lab-ra-api",
+						"1",
+						"configuracion"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
