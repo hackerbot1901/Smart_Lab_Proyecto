@@ -1,4 +1,3 @@
-using SimpleJSON;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -6,68 +5,67 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using Vuforia;
 
-public class SimpleBarcodeScanner : MonoBehaviour
+public class LectorCodigoQr : MonoBehaviour
 {
-    BarcodeBehaviour mBarcodeBehaviour;
-    public static string url = "http://localhost:50352/api/smart-lab-ra-api/v1/configuracion"; // Reemplaza esta URL con la URL de tu servidor
-    public string temp = "";
-    public int contador = 0;
-    public GameObject mensajeInvalido;
-    public GameObject mensajeDeEscaneo;
-    public GameObject mensajeValido;
-    public static ExitoCreacionConfiguracion _config;
+    private BarcodeBehaviour mBarcodeBehaviour;
+    private readonly string url = "http://localhost:50352/api/smart-lab-ra-api/v1/configuracion";
+    private string temporal = "";
+    public ExitoCreacionConfiguracion configuracionActual;
+    public GestorInterfazMensajes interfaz;
 
     void Start()
     {
         mBarcodeBehaviour = GetComponent<BarcodeBehaviour>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (mBarcodeBehaviour != null && mBarcodeBehaviour.InstanceData != null)
         {
             string qrJson = mBarcodeBehaviour.InstanceData.Text;
-            if (temp != qrJson)
+            if (temporal != qrJson)
             {
-                contador++;
-                Debug.Log("Código QR #" + contador + " leído: " + qrJson);
-                temp = qrJson;
+                temporal = qrJson;
                 StartCoroutine(ControlarMensajes(qrJson));
-            }            
+            }
         }
     }
-
-   
 
     private IEnumerator ControlarMensajes(string qrJson)
     {
         ExitoCreacionConfiguracion configuracion = JsonUtility.FromJson<ExitoCreacionConfiguracion>(qrJson);
-        if (configuracion != null && configuracion.subdominio != null && configuracion.api_token != null && configuracion.nombre_usuario != null)
+        if (EsConfiguracionValida(configuracion))
         {
-            mensajeDeEscaneo.SetActive(false);
-            mensajeInvalido.SetActive(false);
-            mensajeValido.SetActive(true);
-            _config = configuracion;            
+
+            interfaz.MostrarMensajeValidoQr();
+            configuracionActual = configuracion;
             yield return new WaitForSeconds(0.6f);
+            interfaz.MostrarMensajeDeEscaneoQr();
             //GN
-            //StartCoroutine(Configuracion(qrJson, _configuracion));
+            //StartCoroutine(ConfigurarQr(qrJson, configuracionActual));
             //Sideralsoft
-            LogicaLectorCodigoBarras.ConfigurarAPI(_config);
+            APICliente.ConfigurarAPI(configuracionActual);
             SceneManager.LoadScene("LecturaCodigoBarras");
         }
         else
         {
-            mensajeDeEscaneo.SetActive(false);
-            mensajeValido.SetActive(false);
-            mensajeInvalido.SetActive(true);
-            yield return new WaitForSeconds(1.0f); // Pausa de 0.8 segundos
-            mensajeInvalido.SetActive(false);
-            mensajeDeEscaneo.SetActive(true);
+            interfaz.MostrarMensajeInvalidoQr();
+            yield return new WaitForSeconds(1.0f);
+            interfaz.MostrarMensajeDeEscaneoQr();
         }
+
     }
 
-    IEnumerator Configuracion(string JSONCodigoQr, ExitoCreacionConfiguracion codigoQrValido)
+    private bool EsConfiguracionValida(ExitoCreacionConfiguracion configuracion)
+    {
+        return configuracion != null &&
+               !string.IsNullOrEmpty(configuracion.subdominio) &&
+               !string.IsNullOrEmpty(configuracion.api_token) &&
+               !string.IsNullOrEmpty(configuracion.nombre_usuario) &&
+               !string.IsNullOrEmpty(configuracion.nombre_tenant);
+    }
+
+    IEnumerator ConfigurarQr(string JSONCodigoQr, ExitoCreacionConfiguracion codigoQrValido)
     {
         byte[] jsonBytes = System.Text.Encoding.UTF8.GetBytes(JSONCodigoQr);
         using UnityWebRequest www = new(url, "POST");
@@ -92,7 +90,7 @@ public class SimpleBarcodeScanner : MonoBehaviour
                 Debug.Log("Subdominio: " + responseAPI.subdominio);
                 Debug.Log("Token: " + responseAPI.api_token);
                 responseAPI.nombre_usuario = codigoQrValido.nombre_usuario;
-                LogicaLectorCodigoBarras.ConfigurarAPI(responseAPI);
+                responseAPI.nombre_tenant = codigoQrValido.nombre_tenant;
                 SceneManager.LoadScene("LecturaCodigoBarras");
             }
         }
@@ -101,5 +99,7 @@ public class SimpleBarcodeScanner : MonoBehaviour
             Debug.LogError("Error en la solicitud: " + ex.Message);
         }
     }
-    
+
+
+
 }

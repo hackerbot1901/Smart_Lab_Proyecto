@@ -5,4 +5,7 @@ public class ExitoCreacionConfiguracion
     public string subdominio;
     public string api_token;
     public string nombre_usuario;
+    public string nombre_tenant;
+
 }
+
