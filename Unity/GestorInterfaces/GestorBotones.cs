@@ -4,14 +4,12 @@ using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RegresoEscena : MonoBehaviour
+public class GestorBotones : MonoBehaviour
 {
-
     public void RegresarEscena()
     {
         APICliente.configuracion = null;
         SceneManager.LoadScene("SampleScene");
-
-    }    
+    } 
 }
 

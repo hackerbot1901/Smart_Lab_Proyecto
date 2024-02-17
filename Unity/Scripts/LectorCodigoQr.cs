@@ -39,8 +39,7 @@ public class LectorCodigoQr : MonoBehaviour
 
             interfaz.MostrarMensajeValidoQr();
             configuracionActual = configuracion;
-            yield return new WaitForSeconds(0.6f);
-            interfaz.MostrarMensajeDeEscaneoQr();
+            yield return new WaitForSeconds(0.5f);
             //GN
             //StartCoroutine(ConfigurarQr(qrJson, configuracionActual));
             //Sideralsoft

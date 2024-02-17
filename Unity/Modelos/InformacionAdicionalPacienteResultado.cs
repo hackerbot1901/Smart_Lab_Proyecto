@@ -12,7 +12,6 @@ public class InformacionAdicionalPacienteResultado
     public string urgencia;
     public string fecha_nacimiento;
     public int numero_orden;
-    public List<InformacionAdicionalPacienteResultadoExamenes> examenes;
-
-    
+    public bool emergencia;
+    public List<InformacionAdicionalPacienteResultadoExamenes> examenes;    
 }

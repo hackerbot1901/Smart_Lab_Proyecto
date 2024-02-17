@@ -22,39 +22,15 @@ public class APICliente : MonoBehaviour
         nombre_tenant.text = configuracion.nombre_tenant;
     }
 
-
-    public IEnumerator ObtenerInformacionPaciente(string barcode, Action<InformacionAdicionalPacienteResultado> onSuccess, Action<string> onFailure)
-    {
-        string url = ConstruirUrl(barcode);
-        using (UnityWebRequest www = UnityWebRequest.Get(url))
-        {
-            www.SetRequestHeader("Authorization", "Bearer " + configuracion.api_token);
-            www.SetRequestHeader("Content-Type", "application/json");
-            www.SetRequestHeader("Accept", "application/json");
-            yield return www.SendWebRequest();
-
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                onFailure?.Invoke(www.error);
-            }
-            else
-            {
-                string jsonText = www.downloadHandler.text;
-                InformacionAdicionalPacienteResultado result = MapearJSONText(jsonText);
-                onSuccess?.Invoke(result);
-            }
-        }
-    }
-
-    private InformacionAdicionalPacienteResultado MapearJSONText(string jsonText)
+    private InformacionAdicionalPacienteResultado MapearJSONText(string jsonText, string codigo_barras)
     {
         //var resultado = JsonUtility.FromJson<InformacionAdicionalPacienteResultado>(jsonText);
         //Sideralsoft
-        var resultado = APISideralsoft(jsonText);
+        var resultado = APISideralsoft(jsonText, codigo_barras);
         return resultado;
     }
 
-    private static InformacionAdicionalPacienteResultado APISideralsoft(string jsonText)
+    private static InformacionAdicionalPacienteResultado APISideralsoft(string jsonText, string codigo_barras)
     {
         JSONNode data = JSON.Parse(jsonText)["data"][0];
         List<InformacionAdicionalPacienteResultadoExamenes> examenes = new List<InformacionAdicionalPacienteResultadoExamenes>();
@@ -81,13 +57,14 @@ public class APICliente : MonoBehaviour
 
         InformacionAdicionalPacienteResultado resultado = new()
         {
-            sucursal = data["sucursal_id"],
-            codigoBarras = data["numero_orden"],
+            sucursal = data["sucursal"]["nombre"],
+            codigoBarras = codigo_barras,
             nombres = data["paciente"]["nombres"],
             apellidos = data["paciente"]["apellidos"],
             sexo = data["paciente"]["sexo"],
             fecha_nacimiento = data["paciente"]["fecha_nacimiento"],
             urgencia = data["estado"],
+            emergencia = data["tipo_atencion"]["urgente"],
             numero_orden = data["numero_orden"],
             examenes = examenes
         };
@@ -99,7 +76,7 @@ public class APICliente : MonoBehaviour
     {
         //string url = "http://localhost:50352/api/smart-lab-ra-api/v1/informacionPaciente/" + codigo_barras;
         //Sidersalsoft
-        string url = "https://" + configuracion.subdominio + ".orion-labs.com/api/v1/ordenes?filtrar[codigo_barras]=" + codigo_barras + "&incluir=examenes,paciente";
+        string url = "https://" + configuracion.subdominio + ".orion-labs.com/api/v1/ordenes?filtrar[codigo_barras]=" + codigo_barras + "&incluir=examenes,paciente,sucursal,tipo_atencion,servicio";
         return url;
     }
 
@@ -111,6 +88,7 @@ public class APICliente : MonoBehaviour
         if (www.result != UnityWebRequest.Result.Success)
         {
             interfaz.MostrarMensajeInvalido();
+            interfaz.LimpiarCampos();
             Debug.Log("Error de red: " + www.error);
         }
         else
@@ -119,7 +97,7 @@ public class APICliente : MonoBehaviour
             {
                 interfaz.MostrarMensajeValido();
                 string jsonText = www.downloadHandler.text;
-                var resultado = MapearJSONText(jsonText);
+                var resultado = MapearJSONText(jsonText, codigo_barras);
                 interfaz.ColocarDatosEnAplicacion(resultado);
                 //InvokeRepeating(nameof(ColocarTiempo), 0f, 1f); // Invoca la función ActualizarTiempo cada segundo
 
@@ -129,6 +107,7 @@ public class APICliente : MonoBehaviour
             {
                 // Mostrar mensaje de código de barras inválido
                 interfaz.MostrarMensajeInvalido();
+                interfaz.LimpiarCampos();
                 Debug.Log("Error al procesar la respuesta: " + e.Message);
             }
         }
