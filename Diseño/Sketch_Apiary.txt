@@ -1,0 +1,134 @@
+FORMAT: 1A
+HOST: https://polls.apiblueprint.org/
+
+# Smart Lab RA
+
+La API Smart Lab RA ayudará a la configuración de subdominio y token para obtener la información adicional de pacientes dentro de codigo de barras CODE128
+
+## Configuracion Subdominio y Token de la API [/configuracion]
+
+### Configuracion de subdominio y token [POST]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "codigoQR": {
+                    "nombreLaboratorista": "Nombre del Laboratorista",
+                    "sucursal": "Nombre de la Sucursal",
+                    "subdominio": "demo",
+                    "api_token": "JgoPwGz1eVSdLbsveTPSEOCV9Q32Rtsg6etOAhv69aCnOW3hJI95szpaUGt4"
+                }
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "mensaje": "Objeto creado para la configuracion de subdominio y token de la aplicacion",
+                "configuracion": {
+                    "subdominio": "demo",
+                    "api_token": "JgoPwGz1eVSdLbsveTPSEOCV9Q32Rtsg6etOAhv69aCnOW3hJI95szpaUGt4",
+                    "nombreLaboratorista": "Nombre del Laboratorista",
+                    "sucursal": "Nombre de la Sucursal"
+                }
+            }
+
++ Response 400 (application/json)
+
+    + Body
+
+            {
+                "mensaje": "Código QR no válido. Las propiedades 'nombreLaboratorista', 'sucursal', 'subdominio' y 'api_token' son requeridas."
+            }
++ Response 500 (application/json)
+
+    + Body
+
+            {
+                "mensaje": "Ocurrió un error al procesar la solicitud."
+            }
+## Informacion adicional paciente [/informacionPaciente{?codigoBarras}]
+
+### Obtiene informacion adicional del paciente [GET]
+
++ Parameters
+    + codigoBarras (required, string) - Código de barras del paciente
+
++ Request
+
+    + Headers
+
+            Content-Type: application/json
+            Authorization: Bearer {token}
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "resultado": {
+                    "sucursal": "AsistaNet",
+                    "codigoBarras": "2401041-13",
+                    "nombres_Apellidos": "Giancarlo Narajo",
+                    "sexo": "Masculino",
+                    "urgencia": "Baja",
+                    "edad": 22,
+                    "numero_Orden": 1002,
+                    "examenes": [
+                        {
+                            "id": 13488,
+                            "id_externo": null,
+                            "codigo": "COL",
+                            "nombre": "COLESTEROL",
+                            "fecha_creacion": "2024-01-04 20:54:21",
+                            "fecha_toma_muestra": null,
+                            "fecha_reporte": null,
+                            "fecha_validacion": null,
+                            "usuario_validacion": null,
+                            "estado": "G",
+                            "valor": 3
+                        },
+                        {
+                            "id": 13489,
+                            "id_externo": null,
+                            "codigo": "TRI",
+                            "nombre": "TRIGLICÉRIDOS",
+                            "fecha_creacion": "2024-01-04 20:54:21",
+                            "fecha_toma_muestra": null,
+                            "fecha_reporte": null,
+                            "fecha_validacion": null,
+                            "usuario_validacion": null,
+                            "estado": "G",
+                            "valor": 10
+                        }
+                    ]
+                },
+                "message": "Se encontró la muestra correspondiente al código de barras."
+            }
+
++ Response 401 (application/json)
+
+    + Body
+
+            {
+                "message": "Se requiere un token válido para acceder al recurso."
+            }
+
++ Response 404 (application/json)
+
+    + Body
+
+            {
+                "message": "No se encontró ninguna muestra para el código de barras proporcionado."
+            }
+
++ Response 500 (application/json)
+
+    + Body
+
+            {
+                "message": "Ocurrió un error al procesar la solicitud."
+            }
