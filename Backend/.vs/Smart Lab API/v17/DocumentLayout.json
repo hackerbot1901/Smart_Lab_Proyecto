@@ -1,0 +1,516 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\laboratoriodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\laboratoriodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\controllers\\informacionpacienteapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\controllers\\informacionpacienteapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\controllers\\configuracionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\controllers\\configuracionapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\smart lab api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\smart lab api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\smart lab api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\smart lab api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\codigoqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\codigoqr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\configuracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\examenesmuestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\examenesmuestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\muestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\muestra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\informacionadicionalpacienteresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\informacionadicionalpacienteresultado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\exitocreacionconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\exitocreacionconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\informacionadicionalpacienteresultadoexamenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\informacionadicionalpacienteresultadoexamenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\laboratoristum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\laboratoristum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\sucursal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\attributes\\validatemodelstateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\attributes\\validatemodelstateattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\wwwroot\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\wwwroot\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\wwwroot\\swagger-original.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\wwwroot\\swagger-original.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\error401.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\error401.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\error400.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\error400.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\error500.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\error500.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\laboratoriodb\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\laboratoriodb\\paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|c:\\users\\trabajo\\documents\\github\\smart_lab_proyecto\\backend\\src\\io.swagger\\models\\informacionadicionalpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9EDC26-A24A-49B7-ABC3-FF7129A60776}|src\\IO.Swagger\\Smart Lab API.csproj|solutionrelative:src\\io.swagger\\models\\informacionadicionalpaciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 242,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configuracion.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Configuracion.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\Configuracion.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Configuracion.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\Configuracion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExamenesMuestra.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\ExamenesMuestra.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\ExamenesMuestra.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\ExamenesMuestra.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\ExamenesMuestra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LaboratorioDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\LaboratorioDbContext.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\LaboratorioDbContext.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\LaboratorioDbContext.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\LaboratorioDbContext.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA5wB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InformacionPacienteApi.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Controllers\\InformacionPacienteApi.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Controllers\\InformacionPacienteApi.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Controllers\\InformacionPacienteApi.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Controllers\\InformacionPacienteApi.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAtwEUAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Smart Lab API.csproj",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Smart Lab API.csproj",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Smart Lab API.csproj",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Smart Lab API.csproj",
+              "RelativeToolTip": "src\\IO.Swagger\\Smart Lab API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-28T16:45:51.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CodigoQr.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\CodigoQr.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\CodigoQr.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\CodigoQr.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\CodigoQr.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:51.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfiguracionApi.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Controllers\\ConfiguracionApi.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Controllers\\ConfiguracionApi.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Controllers\\ConfiguracionApi.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Controllers\\ConfiguracionApi.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAkwFQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\appsettings.json",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\appsettings.json",
+              "RelativeToolTip": "src\\IO.Swagger\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAACMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-28T16:45:52.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Startup.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Startup.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Startup.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Startup.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAkwFAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Muestra.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Muestra.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\Muestra.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Muestra.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\Muestra.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAIA/wBMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InformacionAdicionalPacienteResultado.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultado.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultado.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultado.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultado.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAwwBQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExitoCreacionConfiguracion.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\ExitoCreacionConfiguracion.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\ExitoCreacionConfiguracion.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\ExitoCreacionConfiguracion.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\ExitoCreacionConfiguracion.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAD4vxoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InformacionAdicionalPacienteResultadoExamenes.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultadoExamenes.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultadoExamenes.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultadoExamenes.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\InformacionAdicionalPacienteResultadoExamenes.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAMwBoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Laboratoristum.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Laboratoristum.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\Laboratoristum.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Laboratoristum.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\Laboratoristum.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAawBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Sucursal.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Sucursal.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\Sucursal.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Sucursal.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\Sucursal.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Program.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Program.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Program.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Dockerfile",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Dockerfile",
+              "RelativeToolTip": "src\\IO.Swagger\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-28T16:45:52.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\.gitignore",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\.gitignore",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\.gitignore",
+              "RelativeToolTip": "src\\IO.Swagger\\.gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-28T16:45:52.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\web.config",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\web.config",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\web.config",
+              "RelativeToolTip": "src\\IO.Swagger\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-28T16:45:52.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ValidateModelStateAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Attributes\\ValidateModelStateAttribute.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Attributes\\ValidateModelStateAttribute.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Attributes\\ValidateModelStateAttribute.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Attributes\\ValidateModelStateAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Smart Lab API",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Smart Lab API.csproj",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Smart Lab API.csproj",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Smart Lab API.csproj",
+              "RelativeToolTip": "src\\IO.Swagger\\Smart Lab API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-28T16:45:52.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "web.config",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\web.config",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\wwwroot\\web.config",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\web.config",
+              "RelativeToolTip": "src\\IO.Swagger\\wwwroot\\web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-02-28T16:45:52.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "swagger-original.json",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\swagger-original.json",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\wwwroot\\swagger-original.json",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\swagger-original.json",
+              "RelativeToolTip": "src\\IO.Swagger\\wwwroot\\swagger-original.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-28T16:45:52.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\wwwroot\\index.html",
+              "RelativeToolTip": "src\\IO.Swagger\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-02-28T16:45:52.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Error401.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error401.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\Error401.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error401.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\Error401.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAIAwwBoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Error400.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error400.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\Error400.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error400.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\Error400.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Error500.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error500.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\Error500.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\Error500.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\Error500.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAowGYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Paciente.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\LaboratorioDB\\Paciente.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\LaboratorioDB\\Paciente.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\LaboratorioDB\\Paciente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "InformacionAdicionalPaciente.cs",
+              "DocumentMoniker": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPaciente.cs",
+              "RelativeDocumentMoniker": "src\\IO.Swagger\\Models\\InformacionAdicionalPaciente.cs",
+              "ToolTip": "C:\\Users\\Trabajo\\Documents\\GitHub\\Smart_Lab_Proyecto\\Backend\\src\\IO.Swagger\\Models\\InformacionAdicionalPaciente.cs",
+              "RelativeToolTip": "src\\IO.Swagger\\Models\\InformacionAdicionalPaciente.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAnwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T16:45:52.204Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
