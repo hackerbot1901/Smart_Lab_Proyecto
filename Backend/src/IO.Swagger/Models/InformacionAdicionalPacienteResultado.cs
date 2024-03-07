@@ -71,7 +71,13 @@ namespace IO.Swagger.Models
         /// <value>Nivel de urgencia del paciente</value>
 
         [DataMember(Name = "urgencia")]
-        public string Urgencia { get; set; }
+        public bool Urgencia { get; set; }
+
+        /// <summary>
+        /// Estado de la orden del paciente
+        /// </summary>
+        [DataMember(Name = "estado")]
+        public string Estado { get; set; }
 
         /// <summary>
         /// Gets or Sets FechaNacimiento
@@ -94,6 +100,8 @@ namespace IO.Swagger.Models
 
         [DataMember(Name = "examenes")]
         public List<InformacionAdicionalPacienteResultadoExamenes> Examenes { get; set; }
+
+        
 
         /// <summary>
         /// Returns the string presentation of the object

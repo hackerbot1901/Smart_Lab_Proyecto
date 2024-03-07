@@ -86,9 +86,10 @@ namespace IO.Swagger.Controllers
                             Nombres = paciente.NombrePaciente,
                             Apellidos = paciente.ApellidoPaciente,
                             Sexo = paciente.Genero,
-                            Urgencia = muestra.Urgencia,
+                            Urgencia = muestra.Urgencia == "S",
                             FechaNacimiento = paciente.FechaNacimiento.HasValue ? paciente.FechaNacimiento.Value.ToString("yyyy-MM-dd") : null,
                             NumeroOrden = muestra.NumeroOrden,
+                            Estado = muestra.Estado,
                             Examenes = examenesMuestra.Select(em => new InformacionAdicionalPacienteResultadoExamenes
                             {
                                 Id = em.IdExamenMuestra,
